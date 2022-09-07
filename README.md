@@ -2,6 +2,7 @@
 - Neo4j graph database
 - Flask python framework
 - Networks to visualize graph 
+
 • App service:
 - Registration form to collect information from users like (firstname, email,…)
 - Create graph database for register users.
@@ -17,6 +18,7 @@ in same address or same company app automatically change register user
 status to yellow.
 - Can visualize a graph for all user in same company.
 - Can visualize a graph for all user in same address.
+
 • Design Overview:
 - This is three pages in app (registration page, search page, change state 
 page).
@@ -27,6 +29,7 @@ and it have three parts:
 red status in same address or company.
  Report
 3- add collected data to graph database (Neo4j).
+
 - search page: implemented in searchForStatus() method and 
 it have three parts:
 1- save all data related to user you need to search for in list and 
@@ -39,6 +42,7 @@ display it.
 to visualize user’s data have same company using networks package in 
 python and save this graph in image and send this image to html to 
 display it.
+
 - Change status page: implemented in changeStatu() 
 method and it have two parts:
 1- If new status of specified user is red, it will firstly get all 
